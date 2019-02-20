@@ -1,0 +1,822 @@
+/*partner-block*/
+section#main-img .partner-block {
+    display: flex;
+    justify-content: space-between;
+    padding: 42px 0;
+}
+
+section#main-img img {
+    width: 100%;
+}
+
+section#main-img .partner-block .logo {
+    width: 70%;
+}
+
+section#main-img .partner-block .partners {
+    width: 48%;
+}
+
+section#main-img .partner-block .logo img {
+    max-width: 222px;
+    max-height: 68px;
+}
+
+section#main-img .partner-block p.title {
+    font-family: 'MuseoSansCyrl-300';
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+    text-align: left;
+    color: #a2a2a2;
+    margin-bottom: 10px;
+}
+
+section#main-img .partner-block .partners > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section#main-img .partner-block .partners img {
+    max-width: 130px;
+}
+
+section#main-img {
+    width: 100%;
+    height: 100%;
+    padding-top: 55px;
+}
+/*tours*/
+section#tours {
+    padding: 30px 0;
+}
+section#tours h2 {
+    font-family: 'MuseoSansCyrl-500';
+    font-size: 36px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: 0.9px;
+    text-align: left;
+    color: #555555;
+    margin-bottom: 15px;
+}
+section#tours .header-filter {
+    height: 81px;
+    background-color: #ffff00;
+    background-image: url(../img/tours/bg-filter@2x.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+section#tours .single-title-nav {
+    font-family: 'MuseoSansCyrl-500';
+    font-size: 36px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: 0.9px;
+    text-align: center;
+    color: #555555;
+    text-transform: uppercase;
+}
+section#tours .filter {
+    position: relative;
+}
+section#tours .filter .menu-filter {
+    background-color: #fff;
+    padding: 10px 20px;
+    position: absolute;
+    left: 17px;
+    top: 19px;
+}
+section#tours .filter .menu-filter img {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    position: relative;
+    z-index: 2;
+}
+section#tours .filter .menu-filter img:hover {
+    cursor: pointer;
+}
+section#tours .filter .menu-filter img:last-child {
+    margin-right: 0;
+}
+section#tours .slider-for .single-weath {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-family: 'MuseoSansCyrl-500';
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: 0.6px;
+    text-align: left;
+    color: #555555;
+    border: 2px solid transparent;
+    padding: 5px;
+    position: relative;
+}
+section#tours .slider-for .single-weath.active {
+    border: 2px solid #ffff00;
+    border-radius: 8px;
+}
+section#tours .slider-for .single-weath:hover {
+    cursor: pointer;
+}
+section#tours .slider-for .single-weath i {
+    color: #ffff00;
+    position: absolute;
+    top: 38%;
+    right: 5px;
+}
+section#tours .slider-for .single-weath:not(.active) i {
+    display: none;
+}
+section#tours .slider-for .single-weath img {
+    width: 77px;
+    height: 70px;
+    margin-right: 10px;
+}
+section#tours .slider-for .img-container {
+    position: relative;
+    overflow: hidden;
+    height: 225px;
+}
+section#tours .slider-for .img-container img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+section#tours .slider-for .img-container .title-img {
+    position: absolute;
+    right: 0;
+    top: 120px;
+}
+section#tours .slider-for .img-container .title-img a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 8px 0 5px;
+}
+section#tours .slider-for .img-container .title-img img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+section#tours .slider-for .img-container .title-img date {
+    font-family: 'MuseoSansCyrl-300';
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+    text-align: left;
+    color: #ffff00;
+    margin-top: 5px;
+    display: block;
+}
+section#tours .slider-for-row {
+    margin-top: 40px;
+}
+section#tours .img-with-text {
+    height: 48px;
+    width: 170px;
+    background-color: #ffff00;
+    font-family: 'MuseoSansCyrl-300';
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+    text-align: left;
+    color: #4d4d4d;
+}
+section#tours .img-with-text:hover {
+    text-decoration: none;
+}
+section#tours .grid-tour {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 30px;
+}
+section#tours .slider-for-row .title-tour {
+    margin: 15px  0;
+}
+section#tours .slider-for-row .title-tour a {
+    font-family: 'MuseoSansCyrl-500';
+    font-size: 24px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: 0.6px;
+    text-align: left;
+    color: #555555;
+}
+section#tours .slider-for-row .title-tour a:hover {
+    text-decoration: none;
+}
+section#tours .single-tour .price-img {
+    position: absolute;
+    top: 120px;
+    left: -180px;
+    font-family: 'MuseoSansCyrl-500';
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: 0.6px;
+    text-align: left;
+    color: #ffff00;
+    background-color: rgba(255,255,255,0.38);
+    height: 48px;
+    width: 160px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    opacity: 0;
+}
+section#tours .single-tour:hover .price-img {
+    opacity: 1;
+    left: 0;
+}
+section#tours .single-tour:hover img {
+    transform: scale(1.1);
+}
+section#tours .single-tour p.sale {
+    font-family: 'MuseoSansCyrl-300';
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+    text-align: left;
+    color: #e3ffa8;
+}
+section#tours .single-tour.get-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 55px;
+    font-family: 'MuseoSansCyrl-500';
+    font-size: 36px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.67;
+    letter-spacing: 0.9px;
+    text-align: left;
+    color: #ffdd00;
+    height: 225px;
+    border-radius: 8px;
+    border: 3px solid;
+    text-transform: uppercase;
+}
+section#tours .single-tour.get-more:hover {
+    text-decoration: none;
+    color: #4d4d4d;
+}
+section#tours .single-tour.get-more i {
+    font-size: 30px;
+}
+section#tours .slider-nav {
+    width: 200px;
+    margin: auto;
+}
+section#tours .slider-nav .slick-next:before, section#tours .slider-nav .slick-prev:before {
+    color: #555555;
+    font-family: "Font Awesome 5 Free";
+    font-size: 22px;
+}
+section#tours .slider-nav .slick-next,
+section#tours .slider-nav .slick-prev {
+    top: 45%;
+}
+/*our-gids*/
+section#our-gids {
+    padding: 30px 0;
+}
+section#our-gids h3 {
+    font-family: 'MuseoSansCyrl-500';
+    font-size: 36px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: 0.9px;
+    text-align: left;
+    color: #555555;
+    margin-bottom: 40px;
+}
+section#our-gids img {
+    width: 100%;
+    object-fit: cover;
+}
+section#our-gids .slick-next:before, section#our-gids .slick-prev:before {
+    color: #555555;
+    font-family: "Font Awesome 5 Free";
+    font-size: 22px;
+}
+section#our-gids .slick-next, section#our-gids .slick-prev {
+    top: 43%;
+}
+section#our-gids .single-gid {
+    display: flex!important;
+    justify-content: space-between;
+}
+section#our-gids .info-cont {
+    width: 64%;
+}
+section#our-gids .single-gid .img-container {
+    margin-right: 30px;
+    width: 162px;
+    height: 162px;
+    overflow: hidden;
+    border: 3px solid #ffff00;
+    border-radius: 50%;
+}
+section#our-gids .single-gid {
+    margin: 0 10px 70px 10px;
+    padding-right: 25px;
+}
+section#our-gids .container-slider {
+    margin-right: -10px;
+    margin-left: -10px;
+}
+section#our-gids .single-gid p.title {
+    font-family: 'MuseoSansCyrl-500';
+    font-size: 24px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    color: #191919;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ffff00;
+}
+section#our-gids .single-gid p.description {
+    font-family: 'MuseoSansCyrl-300';
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.29;
+    letter-spacing: 0.4px;
+    text-align: left;
+    color: #555555;
+}
+/*soc*/
+section#soc {
+    margin: 30px 0;
+}
+section#soc .soc-block {
+    height: 100px;
+    background-color: #555555;
+    display: flex;
+    color: #fff;
+    padding: 22px;
+    justify-content: space-between;
+    align-items: baseline;
+}
+section#soc .soc-block p.title {
+    font-family: 'MuseoSansCyrl-500';
+    font-size: 36px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: 0.9px;
+    text-align: left;
+}
+section#soc .soc-block a {
+    border: 1px solid #fff;
+    border-radius: 2px;
+    display: inline-block;
+    font-family: 'MuseoSansCyrl-500';
+    font-size: 24px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: 0.6px;
+    text-align: left;
+    color: #ffffff;
+    transition: all .2s linear;
+    height: 57px;
+    width: 100%;
+    max-width: 170px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 15px;
+}
+section#soc .soc-block a:hover {
+    text-decoration: none;
+    color: #ffff00;
+}
+section#soc .soc-block .link {
+    display: flex;
+    width: 371px;
+    justify-content: space-around;
+}
+/*about-us*/
+section#about-us {
+    padding: 30px 0;
+}
+section#about-us h3 {
+    font-family: 'MuseoSansCyrl-500';
+    font-size: 36px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: 0.9px;
+    text-align: left;
+    color: #555555;
+    margin-bottom: 50px;
+}
+section#about-us p {
+    font-family: 'MuseoSansCyrl-500';
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: 0.4px;
+    text-align: left;
+    color: #555555;
+}
+section#about-us img {
+    width: 100%;
+    transition: all .2s linear;
+}
+section#about-us .insta {
+    margin-top: 80px;
+}
+section#about-us .insta > div {
+    margin-bottom: 24px;
+}
+section#about-us .insta a {
+    display: inline-block;
+    width: 100%;
+    height: 255px;
+    overflow: hidden;
+}
+section#about-us .insta a:hover img {
+    transform: scale(1.1);
+}
+section#about-us a.link {
+    border-radius: 2px;
+    background-color: #ffff00;
+    height: 56px;
+    width: 100%;
+    max-width: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'MuseoSansCyrl-500';
+    font-size: 24px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: 0.6px;
+    text-align: center;
+    color: #555555;
+    transition: all .2s linear;
+    margin: 30px auto;
+}
+section#about-us a.link i {
+    margin-right: 15px;
+}
+section#about-us a:hover {
+    text-decoration: none;
+    background-color: #555555;
+    color: #ffff00;
+}
+/*mail*/
+section#mail {
+    margin: 20px 0 40px 0;
+}
+section#mail .cont-mail {
+    background-color: #ffff00;
+    background-image: url(../img/mail/bg@2x.png);
+    background-position: center;
+    background-size: cover;
+    height: 480px;
+    padding: 70px 80px;
+}
+section#mail p.title {
+    text-transform: uppercase;
+    font-family: 'MuseoSansCyrl-300';
+    font-size: 48px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: 1.2px;
+    text-align: left;
+    color: #555555;
+}
+section#mail p.description {
+    font-family: 'MuseoSansCyrl-300';
+    font-size: 24px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: 0.6px;
+    text-align: left;
+    color: #555555;
+}
+section#mail img {
+    width: 100%;
+}
+section#mail .input-block {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 60px;
+    margin-top: 30px;
+}
+section#mail .input-block button {
+    height: 47px;
+    width: 170px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-family: 'MuseoSansCyrl-500';
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+    text-align: center;
+    color: #ffff00;
+    background-color: #555555;
+    border-radius: 2px;
+}
+section#mail .input-block input {
+    border: 0px;
+    background-color: #fff;
+    font-family: 'MuseoSansCyrl-300';
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+    text-align: left;
+    color: #dddddd;
+    width: 65%;
+    margin-right: 30px;
+    padding-left: 15px;
+}
+
+/*media*/
+@media (max-width: 1199px) {
+    section#tours .slider-for-row .title-tour a{
+        font-size: 21px;
+    }
+    section#tours .slider-for .single-weath img {
+        width: 60px;
+        height: 60px;
+    }
+    section#tours .single-tour.get-more {
+        padding: 30px;
+    }
+    section#soc .soc-block p.title {
+        font-size: 29px;
+    }
+    section#mail p.title {
+        font-size: 42px;
+    }
+    section#mail p.description {
+        font-size: 22px;
+    }
+    section#mail .cont-mail {
+        height: 400px;
+    }
+    section#mail img {
+        height: 100%;
+        object-fit: contain;
+    }
+}
+@media (max-width: 991px) {
+    section#main-img {
+        padding-top: 0;
+    }
+    section#main-img .partner-block {
+        padding: 20px 1rem;
+    }
+    section#main-img .partner-block .partners {
+        width: 90%;
+    }
+    section#soc .soc-block p.title {
+        font-size: 22px;
+    }
+    section#soc .soc-block a {
+        font-size: 16px;
+    }
+    section#soc .soc-block {
+        padding: 20px 10px;
+    }
+    section#soc .soc-block .link {
+        width: 260px;
+    }
+    section#soc .soc-block a:first-child {
+        margin-left: 0;
+    }
+    section#about-us img {
+        height: 300px;
+        object-fit: contain;
+        margin-bottom: 15px;
+    }
+    section#about-us .insta img {
+        height: 100%;
+        object-fit: cover;
+    }
+    section#about-us .insta a {
+        height: 240px;
+    }
+    section#about-us .insta {
+        margin-top: 30px;
+    }
+    section#mail img {
+        display: none;
+    }
+    section#tours .single-tour .price-img {
+        left: 0;
+        opacity: 1;
+        width: 145px;
+    }
+}
+@media (max-width: 767px) {
+    section#main-img .partner-block .logo {
+        width: 33%;
+    }
+    section#main-img .partner-block .partners {
+        width: 60%;
+    }
+    section#main-img .partner-block .partners img {
+        max-width: 90px;
+        margin-right: 10px;
+    }
+    section#tours .single-tour.get-more {
+        padding: 15px;
+        font-size: 25px;
+    }
+    section#soc {
+        margin: 15px 0;
+    }
+    section#soc .soc-block {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    section#mail p.description {
+        font-size: 21px;
+    }
+    section#mail p.title {
+        font-size: 38px;
+    }
+    section#mail .cont-mail {
+        padding: 20px;
+        height: auto;
+    }
+    section#tours .single-tour .price-img {
+        top: 15px;
+    }
+}
+@media (max-width: 575px) {
+    section#main-img .partner-block .partners {
+        display: none;
+    }
+    section#tours .grid-tour {
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 15px;
+    }
+    section#tours .single-tour.get-more i {
+        margin-left: 15px;
+    }
+    section#our-gids .single-gid {
+        flex-direction: column;
+        align-items: center;
+    }
+    section#our-gids .info-cont {
+        width: 100%;
+    }
+    section#our-gids .single-gid {
+        margin: 0 10px 20px 10px;
+         padding-right: 0px;
+    }
+    section#mail .input-block {
+        padding-right: 0;
+    }
+    section#mail p.title {
+        font-size: 28px;
+        text-align: center;
+    }
+    section#mail p.description {
+        font-size: 14px;
+    }
+    section#mail .input-block button {
+        width: 140px;
+        font-size: 14px;
+    }
+    section#soc .soc-block p.title {
+        font-size: 21px;
+    }
+    section#tours .header-filter {
+        justify-content: flex-end;
+        height: 135px;
+    }
+    section#tours .slider-nav {
+        margin: 10px auto;
+    }
+    section#main-img .slide-container .text-container p.title {
+        font-size: 42px;
+    }
+    section#main-img .slide-container {
+        height: calc(100% - 67px);
+    }
+    section#tours .single-tour .price-img {
+        top: 120px;
+    }
+    section#tours .img-with-text {
+        width: 145px;
+    }
+    section#tours .single-tour .price-img {
+        width: 125px;
+        padding-left: 10px;
+    }
+}
+@media (max-width: 405px) {
+    section#our-gids .single-gid {
+        margin: 0;
+    }
+    section#our-gids .single-gid p.description {
+        text-align: justify;
+        padding: 0 5px;
+    }
+    section#soc .soc-block p.title {
+        text-align: center;
+    }
+    section#about-us img {
+        height: 240px;
+    }
+    section#about-us p {
+        text-align: justify;
+    }
+    section#about-us .insta > div {
+        margin-bottom: 10px;
+    }
+    section#about-us .insta img {
+        margin-bottom: 0;
+    }
+    section#tours h2,
+    section#tours .single-title-nav,
+    section#our-gids h3,
+    section#about-us h3 {
+        font-size: 28px;
+    }
+    section#mail p.title {
+        font-size: 19px;
+        text-align: justify;
+    }
+    section#mail p.description {
+        font-size: 12px;
+    }
+    section#mail p.description > br {
+        display: none;
+    }
+    section#mail .input-block button {
+        width: 130px;
+        font-size: 10px;
+    }
+    section#mail .input-block input {
+        margin-right: 10px;
+        font-size: 12px;
+    }
+    section#mail .cont-mail {
+        padding: 20px 10px;
+    }
+}

@@ -1,0 +1,185 @@
+* {
+    font-family: 'MuseoSansCyrl-500';
+    transition: all .2s linear;
+}
+header#main-nav {
+    height: 55px;
+    width: 100%;
+    background-color: #707070;
+}
+header#main-nav .container {
+    height: 100%;
+}
+header#main-nav .navbar {
+    padding: 0;
+    height: 100%;
+}
+header#main-nav .collapse {
+    height: 100%;
+}
+header#main-nav .navbar-nav {
+    height: 100%;
+    width: 70%;
+}
+header#main-nav .navbar-nav li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid #939393;
+    padding: 0 15px;
+}
+header#main-nav .navbar-nav li a {
+    font-family: 'MuseoSansCyrl-300';
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    position: relative;
+    text-transform: capitalize;
+}
+header#main-nav .navbar-nav li span.rounded {
+    width: 6px;
+    height: 6px;
+    background-color: #ffff00;
+    display: block;
+    position: absolute;
+    right: 3px;
+    top: 5px;
+}
+header#main-nav .navbar-nav li.help-item {
+    width: 120px;
+}
+header#main-nav .soc-block {
+    height: 100%;
+    width: 47%;
+    padding-left: 50px;
+    border-left: 1px solid #939393;
+}
+header#main-nav .soc-block > div {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header#main-nav .soc-block .dropdown:hover>.dropdown-menu {
+    display: block;
+    background-color: #707070;
+    min-width: 50px;
+}
+header#main-nav .soc-block .dropdown>.dropdown-toggle:active {
+    pointer-events: none;
+}
+header#main-nav .soc-block a,
+header#main-nav .soc-block button {
+    font-family: 'MuseoSansCyrl-300';
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    transition: all .2s linear;
+}
+header#main-nav .dropdown-item:focus,header#main-nav .dropdown-item:hover {
+    background-color: #707070;
+    color: #ffff00;
+}
+header#main-nav a:hover {
+    color:  #ffff00!important;
+}
+header#main-nav i {
+    font-size: 18px;
+}
+/*media*/
+@media (max-width: 1199px) {
+    header#main-nav .navbar-nav li.help-item {
+        display: none;
+    }
+    header#main-nav .soc-block {
+        padding-left: 10px;
+    }
+}
+@media (max-width: 991px) {
+    .navbar-toggler:focus, .navbar-toggler:hover {
+        outline: none;
+        box-shadow: none;
+    }
+    .navbar-toggler {
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        padding: 5px;
+        background-color: transparent;
+        border: 2px solid #707070;
+        border-radius: 8px;
+    }
+    .navbar-toggler>div {
+        width: 25px;
+        height: 3px;
+        margin-bottom: 5px;
+        background-color: #707070;
+    }
+    .navbar-toggler>div:last-child {
+        margin-bottom: 0;
+    }
+    header#main-nav {
+        height: auto;
+        background-color: transparent;
+    }
+    header#main-nav .collapse {
+        left: -270px;
+        position: fixed;
+        transition: all .3s linear;
+    }
+    header#main-nav .collapse.active {
+        background-color: #707070;
+        width: 100%;
+        max-width: 260px;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start!important;
+    }
+    header#main-nav .navbar-nav {
+        height: auto;
+        width: 100%;
+        padding-top: 40px;
+    }
+    header#main-nav .navbar-nav li span.rounded {
+        right: -5px;
+    }
+    header#main-nav .soc-block {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin-top: 30px;
+    }
+    header#main-nav .soc-block > div {
+        flex-wrap: wrap;
+    }
+    header#main-nav .soc-block > div > a:nth-child(1),
+    header#main-nav .soc-block > div > a:nth-child(2),
+    header#main-nav .soc-block > div > a:nth-child(3),
+    header#main-nav .soc-block > div > a:nth-child(4) {
+        width: 25%;
+    }
+    header#main-nav .soc-block > div > a {
+        margin-bottom: 15px;
+    }
+    header#main-nav .soc-block > div > a:nth-child(5) {
+        width: 100%;
+    }
+    header#main-nav .soc-block .dropdown {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+}
