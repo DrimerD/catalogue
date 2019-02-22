@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
 
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/header.css">
@@ -98,7 +99,7 @@
             <h2>Каталог Турів</h2>
             <div class="filter">
                 <div class="menu-filter">
-                    <img src="img/tours/ico-cal@2x.png" alt="">
+                    <img src="img/tours/ico-cal@2x.png" alt="" class="filter-button">
                     <img src="img/tours/az-filt@2x.png" alt="">
                     <img src="img/tours/za-filt@2x.png" alt="">
                 </div>
@@ -108,38 +109,317 @@
                             Зима
                         </div>
                         <div class="single-title-nav">
+                            Весна
+                        </div>
+                        <div class="single-title-nav">
                             Літо
+                        </div>
+                        <div class="single-title-nav">
+                            Осінь
                         </div>
                     </div>
                 </div>
             </div>
             <div class="slider-for">
                 <div>
-                    <div class="row slider-for-row">
-                        <div class="col-lg-3">
-                            <div data-id="1" class="single-weath active">
+                    <div class="row slider-for-row" id="winter">
+                        <div class="col-lg-4" id="nav-tab" role="tablist">
+                            <a class="single-weath active" id="nav-december-tab" data-toggle="tab" href="#nav-december" role="tab" aria-controls="nav-december" aria-selected="true">
                                 <img src="img/tours/dec@2x.png" alt="Грудень">
                                 Грудень
                                 <i class="fas fa-chevron-right"></i>
-                            </div>
-                            <div data-id="2" class="single-weath">
+                            </a>
+                            <a class="single-weath" id="nav-january-tab" data-toggle="tab" href="#nav-january" role="tab" aria-controls="nav-january" aria-selected="false">
                                 <img src="img/tours/jan@2x.png" alt="Січень">
                                 Січень
                                 <i class="fas fa-chevron-right"></i>
-                            </div>
-                            <div data-id="3" class="single-weath">
+                            </a>
+                            <a class="single-weath" id="nav-february-tab" data-toggle="tab" href="#nav-february" role="tab" aria-controls="nav-february" aria-selected="false">
                                 <img src="img/tours/feb@2x.png" alt="Лютий">
                                 Лютий
                                 <i class="fas fa-chevron-right"></i>
-                            </div>
-                            <div data-id="4" class="single-weath">
+                            </a>
+                            <a class="single-weath" id="nav-newyear-tab" data-toggle="tab" href="#nav-newyear" role="tab" aria-controls="nav-newyear" aria-selected="false">
                                 <img src="img/tours/xms@2x.png" alt="Новорічні свята">
                                 Новорічні свята
                                 <i class="fas fa-chevron-right"></i>
-                            </div>
+                            </a>
                         </div>
-                        <div class="col-lg-9">
-                            <div class="grid-tour">
+                        <div class="col-lg-8" id="nav-tabContent">
+                            <div class="grid-tour show active" id="nav-december" role="tabpanel" aria-labelledby="nav-december-tab">
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/1.jpg" alt="Гори">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/1.png" alt="">
+                                                    Гори
+                                                </a>
+                                                <date class="date">19.12.2019</date>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Несамовиті Високі Татри</a></div>
+                                    </a>
+                                </div>
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/2.jpg" alt="Хайкінг">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/2.png" alt="">
+                                                    Хайкінг
+                                                </a>
+                                                <date class="date">23.12.2019</date>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Похід в "Небесну Долину"</a></div>
+                                    </a>
+                                </div>
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/3.jpg" alt="Печери">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/3.png" alt="">
+                                                    Печери
+                                                </a>
+                                                <date class="date">13.01.2020</date>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Невідомі Медові печери</a></div>
+                                    </a>
+                                </div>
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/6.jpg" alt="Сплав">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/4.png" alt="">
+                                                    Сплав
+                                                </a>
+                                                <date class="date">20.01.2020</date>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Сплав по Стрию</a></div>
+                                    </a>
+                                </div>
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/5.jpg" alt="Фототур">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/5.png" alt="">
+                                                    Фототур
+                                                </a>
+                                                <date class="date">29.01.2020</date>
+                                                <p class="sale">Безкоштовно</p>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Birdwatching на о. Джарилгач</a></div>
+                                    </a>
+                                </div>
+                                <a class="single-tour get-more" href="">
+                                    <div class="text">
+                                        Дивитись більше (12)
+                                    </div>
+                                    <div class="arrow">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid-tour" id="nav-january" role="tabpanel" aria-labelledby="nav-january-tab">
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/1.jpg" alt="Гори">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/1.png" alt="">
+                                                    Гори
+                                                </a>
+                                                <date class="date">19.12.2019</date>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Несамовиті Високі Татри</a></div>
+                                    </a>
+                                </div>
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/2.jpg" alt="Хайкінг">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/2.png" alt="">
+                                                    Хайкінг
+                                                </a>
+                                                <date class="date">23.12.2019</date>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Похід в "Небесну Долину"</a></div>
+                                    </a>
+                                </div>
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/3.jpg" alt="Печери">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/3.png" alt="">
+                                                    Печери
+                                                </a>
+                                                <date class="date">13.01.2020</date>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Невідомі Медові печери</a></div>
+                                    </a>
+                                </div>
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/6.jpg" alt="Сплав">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/4.png" alt="">
+                                                    Сплав
+                                                </a>
+                                                <date class="date">20.01.2020</date>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Сплав по Стрию</a></div>
+                                    </a>
+                                </div>
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/5.jpg" alt="Фототур">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/5.png" alt="">
+                                                    Фототур
+                                                </a>
+                                                <date class="date">29.01.2020</date>
+                                                <p class="sale">Безкоштовно</p>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Birdwatching на о. Джарилгач</a></div>
+                                    </a>
+                                </div>
+                                <a class="single-tour get-more" href="">
+                                    <div class="text">
+                                        Дивитись більше (12)
+                                    </div>
+                                    <div class="arrow">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid-tour" id="nav-february" role="tabpanel" aria-labelledby="nav-february-tab">
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/1.jpg" alt="Гори">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/1.png" alt="">
+                                                    Гори
+                                                </a>
+                                                <date class="date">19.12.2019</date>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Несамовиті Високі Татри</a></div>
+                                    </a>
+                                </div>
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/2.jpg" alt="Хайкінг">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/2.png" alt="">
+                                                    Хайкінг
+                                                </a>
+                                                <date class="date">23.12.2019</date>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Похід в "Небесну Долину"</a></div>
+                                    </a>
+                                </div>
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/3.jpg" alt="Печери">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/3.png" alt="">
+                                                    Печери
+                                                </a>
+                                                <date class="date">13.01.2020</date>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Невідомі Медові печери</a></div>
+                                    </a>
+                                </div>
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/6.jpg" alt="Сплав">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/4.png" alt="">
+                                                    Сплав
+                                                </a>
+                                                <date class="date">20.01.2020</date>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Сплав по Стрию</a></div>
+                                    </a>
+                                </div>
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/5.jpg" alt="Фототур">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/5.png" alt="">
+                                                    Фототур
+                                                </a>
+                                                <date class="date">29.01.2020</date>
+                                                <p class="sale">Безкоштовно</p>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Birdwatching на о. Джарилгач</a></div>
+                                    </a>
+                                </div>
+                                <a class="single-tour get-more" href="">
+                                    <div class="text">
+                                        Дивитись більше (12)
+                                    </div>
+                                    <div class="arrow">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid-tour" id="nav-newyear" role="tabpanel" aria-labelledby="nav-newyear-tab">
                                 <div class="single-tour">
                                     <a href="">
                                         <div class="img-container">
@@ -234,31 +514,31 @@
                     </div>
                 </div>
                 <div>
-                    <div class="row slider-for-row">
-                        <div class="col-lg-3">
-                            <div class="single-weath active">
+                    <div class="row slider-for-row" id="sping">
+                        <div class="col-lg-4"  id="nav-tab2" role="tablist">
+                            <a class="single-weath active" id="nav-march-tab" data-toggle="tab" href="#nav-march" role="tab" aria-controls="nav-march" aria-selected="true">
                                 <img src="img/tours/dec@2x.png" alt="Грудень">
-                                Грудень
+                                Березень
                                 <i class="fas fa-chevron-right"></i>
-                            </div>
-                            <div class="single-weath">
+                            </a>
+                            <a class="single-weath" id="nav-april-tab" data-toggle="tab" href="#nav-april" role="tab" aria-controls="nav-april" aria-selected="false">
                                 <img src="img/tours/jan@2x.png" alt="Січень">
-                                Січень
+                                Квітень
                                 <i class="fas fa-chevron-right"></i>
-                            </div>
-                            <div class="single-weath">
+                            </a>
+                            <a class="single-weath" id="nav-may-tab" data-toggle="tab" href="#nav-may" role="tab" aria-controls="nav-may" aria-selected="false">
                                 <img src="img/tours/feb@2x.png" alt="Лютий">
-                                Лютий
+                                Травень
                                 <i class="fas fa-chevron-right"></i>
-                            </div>
-                            <div class="single-weath">
+                            </a>
+                            <a class="single-weath" id="nav-june-tab" data-toggle="tab" href="#nav-june" role="tab" aria-controls="nav-june" aria-selected="false">
                                 <img src="img/tours/xms@2x.png" alt="Новорічні свята">
-                                Новорічні свята
+                                Червень
                                 <i class="fas fa-chevron-right"></i>
-                            </div>
+                            </a>
                         </div>
-                        <div class="col-lg-9">
-                            <div class="grid-tour">
+                        <div class="col-lg-8" id="nav-tabContent2">
+                            <div class="grid-tour show active" id="nav-march" role="tabpanel" aria-labelledby="nav-march-tab">
                                 <div class="single-tour">
                                     <a href="">
                                         <div class="img-container">
@@ -342,7 +622,280 @@
                                 </div>
                                 <a class="single-tour get-more" href="">
                                     <div class="text">
-                                        Дивитись більше (14)
+                                        Дивитись більше (12)
+                                    </div>
+                                    <div class="arrow">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid-tour" id="nav-april" role="tabpanel" aria-labelledby="nav-april-tab">
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/1.jpg" alt="Гори">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/1.png" alt="">
+                                                    Гори
+                                                </a>
+                                                <date class="date">19.12.2019</date>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Несамовиті Високі Татри</a></div>
+                                    </a>
+                                </div>
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/2.jpg" alt="Хайкінг">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/2.png" alt="">
+                                                    Хайкінг
+                                                </a>
+                                                <date class="date">23.12.2019</date>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Похід в "Небесну Долину"</a></div>
+                                    </a>
+                                </div>
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/3.jpg" alt="Печери">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/3.png" alt="">
+                                                    Печери
+                                                </a>
+                                                <date class="date">13.01.2020</date>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Невідомі Медові печери</a></div>
+                                    </a>
+                                </div>
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/6.jpg" alt="Сплав">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/4.png" alt="">
+                                                    Сплав
+                                                </a>
+                                                <date class="date">20.01.2020</date>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Сплав по Стрию</a></div>
+                                    </a>
+                                </div>
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/5.jpg" alt="Фототур">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/5.png" alt="">
+                                                    Фототур
+                                                </a>
+                                                <date class="date">29.01.2020</date>
+                                                <p class="sale">Безкоштовно</p>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Birdwatching на о. Джарилгач</a></div>
+                                    </a>
+                                </div>
+                                <a class="single-tour get-more" href="">
+                                    <div class="text">
+                                        Дивитись більше (12)
+                                    </div>
+                                    <div class="arrow">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid-tour" id="nav-may" role="tabpanel" aria-labelledby="nav-may-tab">
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/1.jpg" alt="Гори">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/1.png" alt="">
+                                                    Гори
+                                                </a>
+                                                <date class="date">19.12.2019</date>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Несамовиті Високі Татри</a></div>
+                                    </a>
+                                </div>
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/2.jpg" alt="Хайкінг">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/2.png" alt="">
+                                                    Хайкінг
+                                                </a>
+                                                <date class="date">23.12.2019</date>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Похід в "Небесну Долину"</a></div>
+                                    </a>
+                                </div>
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/3.jpg" alt="Печери">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/3.png" alt="">
+                                                    Печери
+                                                </a>
+                                                <date class="date">13.01.2020</date>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Невідомі Медові печери</a></div>
+                                    </a>
+                                </div>
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/6.jpg" alt="Сплав">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/4.png" alt="">
+                                                    Сплав
+                                                </a>
+                                                <date class="date">20.01.2020</date>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Сплав по Стрию</a></div>
+                                    </a>
+                                </div>
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/5.jpg" alt="Фототур">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/5.png" alt="">
+                                                    Фототур
+                                                </a>
+                                                <date class="date">29.01.2020</date>
+                                                <p class="sale">Безкоштовно</p>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Birdwatching на о. Джарилгач</a></div>
+                                    </a>
+                                </div>
+                                <a class="single-tour get-more" href="">
+                                    <div class="text">
+                                        Дивитись більше (12)
+                                    </div>
+                                    <div class="arrow">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid-tour" id="nav-june" role="tabpanel" aria-labelledby="nav-june-tab">
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/1.jpg" alt="Гори">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/1.png" alt="">
+                                                    Гори
+                                                </a>
+                                                <date class="date">19.12.2019</date>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Несамовиті Високі Татри</a></div>
+                                    </a>
+                                </div>
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/2.jpg" alt="Хайкінг">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/2.png" alt="">
+                                                    Хайкінг
+                                                </a>
+                                                <date class="date">23.12.2019</date>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Похід в "Небесну Долину"</a></div>
+                                    </a>
+                                </div>
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/3.jpg" alt="Печери">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/3.png" alt="">
+                                                    Печери
+                                                </a>
+                                                <date class="date">13.01.2020</date>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Невідомі Медові печери</a></div>
+                                    </a>
+                                </div>
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/6.jpg" alt="Сплав">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/4.png" alt="">
+                                                    Сплав
+                                                </a>
+                                                <date class="date">20.01.2020</date>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Сплав по Стрию</a></div>
+                                    </a>
+                                </div>
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/5.jpg" alt="Фототур">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/5.png" alt="">
+                                                    Фототур
+                                                </a>
+                                                <date class="date">29.01.2020</date>
+                                                <p class="sale">Безкоштовно</p>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Birdwatching на о. Джарилгач</a></div>
+                                    </a>
+                                </div>
+                                <a class="single-tour get-more" href="">
+                                    <div class="text">
+                                        Дивитись більше (12)
                                     </div>
                                     <div class="arrow">
                                         <i class="fas fa-chevron-right"></i>
@@ -351,6 +904,542 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div>
+                    <div class="row slider-for-row" id="summer">
+                        <div class="col-lg-4"  id="nav-tab3" role="tablist">
+                            <a class="single-weath active" id="nav-july-tab" data-toggle="tab" href="#nav-july" role="tab" aria-controls="nav-july" aria-selected="true">
+                                <img src="img/tours/dec@2x.png" alt="Грудень">
+                                Липень
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                            <a class="single-weath" id="nav-august-tab" data-toggle="tab" href="#nav-august" role="tab" aria-controls="nav-august" aria-selected="false">
+                                <img src="img/tours/jan@2x.png" alt="Січень">
+                                Серпень
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                            <a class="single-weath" id="nav-september-tab" data-toggle="tab" href="#nav-september" role="tab" aria-controls="nav-september" aria-selected="false">
+                                <img src="img/tours/feb@2x.png" alt="Лютий">
+                                Вересень
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </div>
+                        <div class="col-lg-8" id="nav-tabContent3">
+                            <div class="grid-tour show active" id="nav-july" role="tabpanel" aria-labelledby="nav-july-tab">
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/1.jpg" alt="Гори">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/1.png" alt="">
+                                                    Гори
+                                                </a>
+                                                <date class="date">19.12.2019</date>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Несамовиті Високі Татри</a></div>
+                                    </a>
+                                </div>
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/2.jpg" alt="Хайкінг">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/2.png" alt="">
+                                                    Хайкінг
+                                                </a>
+                                                <date class="date">23.12.2019</date>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Похід в "Небесну Долину"</a></div>
+                                    </a>
+                                </div>
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/3.jpg" alt="Печери">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/3.png" alt="">
+                                                    Печери
+                                                </a>
+                                                <date class="date">13.01.2020</date>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Невідомі Медові печери</a></div>
+                                    </a>
+                                </div>
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/6.jpg" alt="Сплав">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/4.png" alt="">
+                                                    Сплав
+                                                </a>
+                                                <date class="date">20.01.2020</date>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Сплав по Стрию</a></div>
+                                    </a>
+                                </div>
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/5.jpg" alt="Фототур">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/5.png" alt="">
+                                                    Фототур
+                                                </a>
+                                                <date class="date">29.01.2020</date>
+                                                <p class="sale">Безкоштовно</p>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Birdwatching на о. Джарилгач</a></div>
+                                    </a>
+                                </div>
+                                <a class="single-tour get-more" href="">
+                                    <div class="text">
+                                        Дивитись більше (12)
+                                    </div>
+                                    <div class="arrow">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid-tour" id="nav-august" role="tabpanel" aria-labelledby="nav-august-tab">
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/1.jpg" alt="Гори">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/1.png" alt="">
+                                                    Гори
+                                                </a>
+                                                <date class="date">19.12.2019</date>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Несамовиті Високі Татри</a></div>
+                                    </a>
+                                </div>
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/2.jpg" alt="Хайкінг">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/2.png" alt="">
+                                                    Хайкінг
+                                                </a>
+                                                <date class="date">23.12.2019</date>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Похід в "Небесну Долину"</a></div>
+                                    </a>
+                                </div>
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/3.jpg" alt="Печери">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/3.png" alt="">
+                                                    Печери
+                                                </a>
+                                                <date class="date">13.01.2020</date>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Невідомі Медові печери</a></div>
+                                    </a>
+                                </div>
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/6.jpg" alt="Сплав">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/4.png" alt="">
+                                                    Сплав
+                                                </a>
+                                                <date class="date">20.01.2020</date>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Сплав по Стрию</a></div>
+                                    </a>
+                                </div>
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/5.jpg" alt="Фототур">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/5.png" alt="">
+                                                    Фототур
+                                                </a>
+                                                <date class="date">29.01.2020</date>
+                                                <p class="sale">Безкоштовно</p>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Birdwatching на о. Джарилгач</a></div>
+                                    </a>
+                                </div>
+                                <a class="single-tour get-more" href="">
+                                    <div class="text">
+                                        Дивитись більше (12)
+                                    </div>
+                                    <div class="arrow">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid-tour" id="nav-september" role="tabpanel" aria-labelledby="nav-september-tab">
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/1.jpg" alt="Гори">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/1.png" alt="">
+                                                    Гори
+                                                </a>
+                                                <date class="date">19.12.2019</date>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Несамовиті Високі Татри</a></div>
+                                    </a>
+                                </div>
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/2.jpg" alt="Хайкінг">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/2.png" alt="">
+                                                    Хайкінг
+                                                </a>
+                                                <date class="date">23.12.2019</date>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Похід в "Небесну Долину"</a></div>
+                                    </a>
+                                </div>
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/3.jpg" alt="Печери">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/3.png" alt="">
+                                                    Печери
+                                                </a>
+                                                <date class="date">13.01.2020</date>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Невідомі Медові печери</a></div>
+                                    </a>
+                                </div>
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/6.jpg" alt="Сплав">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/4.png" alt="">
+                                                    Сплав
+                                                </a>
+                                                <date class="date">20.01.2020</date>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Сплав по Стрию</a></div>
+                                    </a>
+                                </div>
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/5.jpg" alt="Фототур">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/5.png" alt="">
+                                                    Фототур
+                                                </a>
+                                                <date class="date">29.01.2020</date>
+                                                <p class="sale">Безкоштовно</p>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Birdwatching на о. Джарилгач</a></div>
+                                    </a>
+                                </div>
+                                <a class="single-tour get-more" href="">
+                                    <div class="text">
+                                        Дивитись більше (12)
+                                    </div>
+                                    <div class="arrow">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="row slider-for-row" id="autumn">
+                        <div class="col-lg-4"  id="nav-tab4" role="tablist">
+                            <a class="single-weath active" id="nav-october-tab" data-toggle="tab" href="#nav-october" role="tab" aria-controls="nav-october" aria-selected="true">
+                                <img src="img/tours/dec@2x.png" alt="Грудень">
+                                Жовтень
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                            <a class="single-weath" id="nav-november-tab" data-toggle="tab" href="#nav-november" role="tab" aria-controls="nav-november" aria-selected="false">
+                                <img src="img/tours/jan@2x.png" alt="Січень">
+                                Листопад
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </div>
+                        <div class="col-lg-8" id="nav-tabContent4">
+                            <div class="grid-tour show active" id="nav-october" role="tabpanel" aria-labelledby="nav-october-tab">
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/1.jpg" alt="Гори">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/1.png" alt="">
+                                                    Гори
+                                                </a>
+                                                <date class="date">19.12.2019</date>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Несамовиті Високі Татри</a></div>
+                                    </a>
+                                </div>
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/2.jpg" alt="Хайкінг">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/2.png" alt="">
+                                                    Хайкінг
+                                                </a>
+                                                <date class="date">23.12.2019</date>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Похід в "Небесну Долину"</a></div>
+                                    </a>
+                                </div>
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/3.jpg" alt="Печери">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/3.png" alt="">
+                                                    Печери
+                                                </a>
+                                                <date class="date">13.01.2020</date>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Невідомі Медові печери</a></div>
+                                    </a>
+                                </div>
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/6.jpg" alt="Сплав">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/4.png" alt="">
+                                                    Сплав
+                                                </a>
+                                                <date class="date">20.01.2020</date>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Сплав по Стрию</a></div>
+                                    </a>
+                                </div>
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/5.jpg" alt="Фототур">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/5.png" alt="">
+                                                    Фототур
+                                                </a>
+                                                <date class="date">29.01.2020</date>
+                                                <p class="sale">Безкоштовно</p>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Birdwatching на о. Джарилгач</a></div>
+                                    </a>
+                                </div>
+                                <a class="single-tour get-more" href="">
+                                    <div class="text">
+                                        Дивитись більше (12)
+                                    </div>
+                                    <div class="arrow">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid-tour" id="nav-november" role="tabpanel" aria-labelledby="nav-november-tab">
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/1.jpg" alt="Гори">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/1.png" alt="">
+                                                    Гори
+                                                </a>
+                                                <date class="date">19.12.2019</date>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Несамовиті Високі Татри</a></div>
+                                    </a>
+                                </div>
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/2.jpg" alt="Хайкінг">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/2.png" alt="">
+                                                    Хайкінг
+                                                </a>
+                                                <date class="date">23.12.2019</date>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Похід в "Небесну Долину"</a></div>
+                                    </a>
+                                </div>
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/3.jpg" alt="Печери">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/3.png" alt="">
+                                                    Печери
+                                                </a>
+                                                <date class="date">13.01.2020</date>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Невідомі Медові печери</a></div>
+                                    </a>
+                                </div>
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/6.jpg" alt="Сплав">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/4.png" alt="">
+                                                    Сплав
+                                                </a>
+                                                <date class="date">20.01.2020</date>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Сплав по Стрию</a></div>
+                                    </a>
+                                </div>
+                                <div class="single-tour">
+                                    <a href="">
+                                        <div class="img-container">
+                                            <img src="img//tours/5.jpg" alt="Фототур">
+                                            <div class="title-img">
+                                                <a class="img-with-text">
+                                                    <img src="img/tours/ico/5.png" alt="">
+                                                    Фототур
+                                                </a>
+                                                <date class="date">29.01.2020</date>
+                                                <p class="sale">Безкоштовно</p>
+                                            </div>
+                                            <div class="price-img">₴ 8500</div>
+                                        </div>
+                                        <div class="title-tour"><a href="">Birdwatching на о. Джарилгач</a></div>
+                                    </a>
+                                </div>
+                                <a class="single-tour get-more" href="">
+                                    <div class="text">
+                                        Дивитись більше (12)
+                                    </div>
+                                    <div class="arrow">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-form col-lg-4">
+                <div class="header-form">
+                    <img src="img/filter/ico-cal@2x.png" alt="filter">
+                    Фільтр
+                </div>
+                <div class="container-form">
+                    <p>Тип туру: <span class="type-tour">Всі</span></p>
+                    <div class="type">
+                        <img src="img/filter/all@2x.png" alt="всі">
+                        <img src="img/filter/1@2x.png" alt="Кемпінг">
+                        <img src="img/filter/2@2x.png" alt="Кемпінг2">
+                        <img src="img/filter/3@2x.png" alt="Кемпінг3">
+                        <img src="img/filter/4@2x.png" alt="Сплав">
+                        <img src="img/filter/5@2x.png" alt="Фото">
+                        <img src="img/filter/4@2x.png" alt="Фото">
+                        <img src="img/filter/1@2x.png" alt="Кемпінг">
+                        <img src="img/filter/2@2x.png" alt="Кемпінг2">
+                        <img src="img/filter/3@2x.png" alt="Кемпінг3">
+                    </div>
+                    <p class="date">
+                        Дати: <span class="start"></span> - <span class="end"></span>
+                    </p>
+                    <div class="input-date">
+                        <div class="input-date-start active click" data-dir="start">
+                            <span class="title">Починаючи з</span>
+                            <span class="input-date-text-start"></span>
+                        </div>
+                        <div class="input-date-end click" data-dir="end">
+                            <span class="title">Закінчуючи</span>
+                            <span class="input-date-text-end"></span>
+                        </div>
+                        <div class="bullets">
+                            <span></span><span></span><span></span>
+                        </div>
+                    </div>
+
+                    <div class="calendar"></div>
+
                 </div>
             </div>
         </div>
@@ -505,7 +1594,7 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
+<script src="js/bootstrap-datepicker.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 
 <script src="js/header.js"></script>
