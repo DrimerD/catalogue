@@ -4,7 +4,6 @@
     <list default="true" id="9515f04b-1a91-4ad4-a7e9-f49d8ac03938" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/catalogue.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/catalogue.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/MuseoSansCyrl_1.otf" beforeDir="false" afterPath="$PROJECT_DIR$/fonts/MuseoSansCyrl_1.otf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/catalogue.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/catalogue.js" afterDir="false" />
     </list>
@@ -18,14 +17,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5708245">
+    <splitter split-orientation="horizontal" split-proportion="0.54756874">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="328">
-                  <caret line="1431" column="71" selection-start-line="1431" selection-start-column="71" selection-end-line="1431" selection-end-column="71" />
+                <state relative-caret-position="275">
+                  <caret line="1460" column="67" lean-forward="true" selection-start-line="1460" selection-start-column="67" selection-end-line="1460" selection-end-column="67" />
                   <folding>
                     <element signature="n#header#0;n#main#0;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" />
@@ -51,20 +50,20 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/catalogue.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="436">
-                  <caret line="183" column="20" lean-forward="true" selection-start-line="183" selection-start-column="20" selection-end-line="183" selection-end-column="20" />
+                <state relative-caret-position="296">
+                  <caret line="1236" column="57" lean-forward="true" selection-start-line="1236" selection-start-column="57" selection-end-line="1236" selection-end-column="57" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/catalogue.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="495">
-                  <caret line="127" selection-start-line="127" selection-end-line="127" />
+                <state relative-caret-position="480">
+                  <caret line="180" column="120" selection-start-line="180" selection-start-column="120" selection-end-line="180" selection-end-column="120" />
                 </state>
               </provider>
             </entry>
@@ -73,6 +72,12 @@
       </split-second>
     </splitter>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>after</find>
+      <find>Релак</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -80,9 +85,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/css/header.css" />
-        <option value="$PROJECT_DIR$/css/catalogue.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/catalogue.js" />
+        <option value="$PROJECT_DIR$/css/catalogue.css" />
       </list>
     </option>
   </component>
@@ -163,12 +168,13 @@
       <option name="presentableId" value="Default" />
       <updated>1550695543150</updated>
       <workItem from="1550695545744" duration="2751000" />
-      <workItem from="1550770894117" duration="6465000" />
+      <workItem from="1550770894117" duration="6733000" />
+      <workItem from="1551014685959" duration="4336000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9216000" />
+    <option name="totallyTimeSpent" value="13820000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="820" extended-state="0" />
@@ -207,17 +213,17 @@
     <entry file="file://$PROJECT_DIR$/js/header.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/catalogue.css">
+    <entry file="file://$PROJECT_DIR$/js/catalogue.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="183" column="20" lean-forward="true" selection-start-line="183" selection-start-column="20" selection-end-line="183" selection-end-column="20" />
+        <state relative-caret-position="480">
+          <caret line="180" column="120" selection-start-line="180" selection-start-column="120" selection-end-line="180" selection-end-column="120" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="1431" column="71" selection-start-line="1431" selection-start-column="71" selection-end-line="1431" selection-end-column="71" />
+        <state relative-caret-position="275">
+          <caret line="1460" column="67" lean-forward="true" selection-start-line="1460" selection-start-column="67" selection-end-line="1460" selection-end-column="67" />
           <folding>
             <element signature="n#header#0;n#main#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" />
@@ -238,10 +244,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/catalogue.js">
+    <entry file="file://$PROJECT_DIR$/css/catalogue.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="127" selection-start-line="127" selection-end-line="127" />
+        <state relative-caret-position="296">
+          <caret line="1236" column="57" lean-forward="true" selection-start-line="1236" selection-start-column="57" selection-end-line="1236" selection-end-column="57" />
         </state>
       </provider>
     </entry>

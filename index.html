@@ -11,6 +11,8 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
 
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/header.css">
@@ -1425,11 +1427,11 @@
                         Дати: <span class="start"></span> - <span class="end"></span>
                     </p>
                     <div class="input-date">
-                        <div class="input-date-start active click" data-dir="start">
+                        <div class="input-date-start active click" data-dir="start" name="start">
                             <span class="title">Починаючи з</span>
                             <span class="input-date-text-start"></span>
                         </div>
-                        <div class="input-date-end click" data-dir="end">
+                        <div class="input-date-end click" data-dir="end" name="end">
                             <span class="title">Закінчуючи</span>
                             <span class="input-date-text-end"></span>
                         </div>
@@ -1440,6 +1442,42 @@
 
                     <div class="calendar"></div>
 
+                    <p class="counter">Мандрівників: <span class="count-travel">1</span></p>
+
+                    <div class="counter-container">
+                        <img src="img/filter/counter@2x.png" alt="">
+                        <div class="qt">
+                            <span class="minus">-</span>
+                            <input type="number" class="count" name="qty" value="1">
+                            <span class="plus">+</span>
+                        </div>
+                    </div>
+
+                    <p class="complexity">Складність: <span class="complexity-text">Релакс</span></p>
+
+                    <div class="complexity-slider">
+                        <div class="font-styles">Релакс</div>
+                        <div class="font-styles">Амінь</div>
+                        <div class="font-styles">Легка смерть</div>
+                    </div>
+
+                    <p class="amount">Вартість</p>
+
+                    <div class="slidecontainer">
+                        <div id="slider-range"></div>
+                    </div>
+
+                    <div class="slide-text">
+                        <div class="start"></div>
+                        <div class="bullet">
+                            <span></span><span></span><span></span><span></span><span></span><span></span>
+                        </div>
+                        <div class="end"></div>
+                    </div>
+                    <p class="button-filter-container">
+                        <button class="submit-filter-true">Фільтрувати</button>
+                        <button class="submit-filter-cancel">Скасувати</button>
+                    </p>
                 </div>
             </div>
         </div>
@@ -1592,6 +1630,8 @@
 
 <!--scripts-->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script src="js/bootstrap-datepicker.min.js"></script>
